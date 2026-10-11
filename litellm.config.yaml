@@ -1,0 +1,14 @@
+model_list:
+  - model_name: local-small
+    litellm_params:
+      model: ollama/llama3.2:3b
+      api_base: http://ollama:11434
+  - model_name: local-medium
+    litellm_params:
+      model: ollama/qwen2.5:7b
+      api_base: http://ollama:11434
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 2
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

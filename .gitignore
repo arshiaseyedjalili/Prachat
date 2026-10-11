@@ -1,0 +1,12 @@
+# prachat
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+backups/*
+artifacts/*
+workspaces/*
+!backups/.gitkeep
+!artifacts/.gitkeep
+!workspaces/.gitkeep
